@@ -18,4 +18,13 @@ var Matrix3 = [
     [3],
 ];
 
-console.log(multiply.multiplyMatrix(Matrix1,Matrix2));
+let Result = multiply.multiplyMatrix(Matrix1,Matrix2);
+
+for(let i=0;i<Result.length;i++){
+    let Test = "";
+    for(let j=0;j<Result[0].length;j++){
+        Test = Test+" "+ Result[i][j]
+    }
+    console.log(Test);
+}
+
